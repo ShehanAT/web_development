@@ -1,0 +1,23 @@
+
+function destroyer(arr) {
+  // Remove all the values
+  
+  var newArr = Array.from(arr); 
+  for (var args = 1; args <= arguments.length; args++){
+    while (newArr.indexOf(arguments[args]) in newArr ){
+      newArr.splice(newArr.indexOf(arguments[args]), 1);
+      console.log(newArr);
+      
+    }
+  
+  
+ 
+ 
+  }
+  
+  
+ return newArr;
+}
+
+
+destroyer([3,4,3,1,2,1], 1);
